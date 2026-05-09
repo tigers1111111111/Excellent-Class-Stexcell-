@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stexcell - Kelas 9A Excellent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="logo-9a.png" alt="Logo Kelas 9A">
+      Stexcell
+    </div>
+
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#siswa">Profil Siswa</a></li>
+      <li><a href="#album">Album</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero" id="home">
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image: url('foto15.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto17.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto3.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto1.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto7.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto6.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto9.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto15.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('foto17.jpg');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1><span id="hero-title" class="text">STEXCELL</span></h1>
+      <p><span id="hero-subtitle" class="text">Kelas 9A Excellent</span></p>
+      <span><span id="hero-quote" class="text">"Bersama kita kenang selamanya"</span></span>
+    </div>
+    <div class="slideshow-controls">
+      <!-- Dihapus tombol panah prev/next. Geser otomatis lewat slideshow JS. -->
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERI SISWA -->
+  <section id="siswa" class="reveal">
+    <div class="section-title">
+      <h2>Profil Siswa</h2>
+      <p>Klik foto untuk melihat informasi pribadi</p>
+    </div>
+
+    <div class="grid" id="studentGrid">
+      <div class="card scroll" data-modal='["Adinda Zahrany Fitrya","-","30 Oktober 2010","@add1ndaa_","dinda.jpeg","Ds. Kalianyar Kec. Kertosono",""]'>
+        <img src="dinda.jpeg">
+        <h4>Adinda</h4>
+      </div>
+
+      <div class="card scroll"data-modal='["Aila Fadhilatus Syafira","-","  15 Maret 2010"," @syaf1raa__","aila.jpeg"," Ds. Cengkok, Kec. Ngronggot",""]'>
+        <img src="aila.jpeg">
+        <h4>Aila</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Aliya roudhotul Madania","-"," 30 November 2010","@liya.r0_m","gak roh jenenge.jpeg","Ds. Kalianyar Kec. Kertosono ",""]'>
+        <img src="gak roh jenenge.jpeg">
+        <h4>Aliya</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Anantya","-","-","-","prfile.jpg","",""]'>
+        <img src="prfile.jpg">
+        <h4>Anantya</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Andini meyzila","-","7 Mei 2011","-","dini.jpeg","Dsn.logawe, Ds. sumber kepuh, Kec. Lengkong",""]'>
+        <img src="dini.jpeg">
+        <h4>Andini</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Andrean Aditama","-","20 Mei 2011","@Andd_Adiii","arip.jpeg"," Dsn Kaplingan, Ds Pelem, Kec. Kertosono",""]'>
+        <img src="arip.jpeg">
+        <h4>Andrean</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Andriya Bima","-","12 Juli 2010","@mamangx_andri","yono.jpeg","Ds. Nglawak Kec. Kertosono",""]'>
+        <img src="yono.jpeg">
+        <h4>Andriya</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Arkana Fadhil Antona","-","14 November 2010","@arkknna","prfile.jpg","Ds. Gondang tanjung, Kec. Kertosono",""]'>
+        <img src="prfile.jpg">
+        <h4>Arkana</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Atina Zuhda Kamila","-","1 April 2011","@niii.zuuh","atina.jpeg"," Dsn. Balerejo, Ds. Rowoharjo, Kec. Prambon",""]'>
+        <img src="atina.jpeg">
+        <h4>Atina</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Dalovesti Alvalva ","-","16 Maret 2011","@d.lovest__","dal.jpeg","Ds. Mabung, Baron, Nganjuk",""]'>
+        <img src="dal.jpeg">
+        <h4>Dalovesti</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Dinda Sekar Rahmadani","-","2 September 2010"," @always.ndaa20","prfile.jpg","Ds. Kayen Kec. Bandarkedungmulyo",""]'>
+        <img src="prfile.jpg">
+        <h4>Dinda</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Faiz Rachmat Hendrawan","-"," 24 Oktober 2010","@vryzee__","faiz.jpeg","Ds. Pandantoyo, Kec. Kertosono",""]'>
+        <img src="faiz.jpeg">
+        <h4>Faiz</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Faizatul Kamila Nisaurrahma","-"," 21 Mei 2011","@ilunarcotics","kamil.jpeg","Ds Pisang, Kec Patianrowo",""]'>
+        <img src="kamil.jpeg">
+        <h4>Kamila</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Femitesya Maulida","-","25 Februari 2011","@fmyytesya_","tes.jpeg","Dsn. Gerbong, Ds. Demangan, Kec. Tanjunganom,",""]'>
+        <img src="tes.jpeg">
+        <h4>Femitesya</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Hasby Asshidqi","-","9 Januari 2011","@hasby_dutzz","aby.jpeg","ds.bangsri, kec.kertosono",""]'>
+        <img src="aby.jpeg">
+        <h4>Hasby</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Hasna Salsabila Putri","-","5 Juli 2011","@saturnzzrr","has.jpeg","Ds. Kemaduh, Kec. Baron",""]'>
+        <img src="has.jpeg">
+        <h4>Hasna</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Heylen Dwi Hermansyah","-","20 April 2011","@hllenospider","herman.jpeg","Ds. nglawak, Kec. Kertosono",""]'>
+        <img src="herman.jpeg">
+        <h4>Heylen</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Levina Carrinta Azzakya","-","04 November 2010","@levinacarrinta","lev.jpegDs. Bangsri, Kec. Kertosono",""]'>
+        <img src="lev.jpeg">
+        <h4>Levina</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Lylla Putri Agnifirstly","-"," 5 Juni 2011","@itsjustt.frsly_","lila.jpegDsn. Kedunglawe, Ds.Tirtobinangun, Kec. Patiantowo",""]'>
+        <img src="lila.jpeg">
+        <h4>Lylla</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Moch Raja Amirul Mukminin","-","1 November 2010","@itskynn___","ra.jpeg","Dsn Kaplingan, Ds Pelem, Kec. Kertosono",""]'>
+        <img src="ra.jpeg">
+        <h4>Raja</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Mohammad Nur Huda","0857-0441-6106","5 Agustus 2010","@m.nr_huda","huda.jpeg","Dsn. Bogo, Ds. Nglawak, Kec. Kertosono",""]'>
+        <img src="huda.jpeg">
+        <h4>Huda</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Muhammad Mirza Isyraq Afiq ","-","21 Agustus 2011","@mirzaaaa_55","mir.jpeg","Ds. Kemaduh, Kec. Baron",""]'>
+        <img src="mir.jpeg">
+        <h4>Mirza</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Nabila Lailatul Badriya","-","10 September 2011","@nabl_la","mbuh.jpeg","Dsn. Jarakan, Ds. Sidoharjo",""]'>
+        <img src="mbuh.jpeg">
+        <h4>Nabila</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Naura Akmalin Tazkiya","-","14 Desember 2010","@l0wwiey","gakorh.jpeg","Ds. Garu, Kec. Baron",""]'>
+        <img src="gakorh.jpeg">
+        <h4>Nura</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Qisya Nafidza Abbas","-","15 April 2011","@huozzmi","qisa.jpeg","Ds. Kalianyar, kec. kertosono",""]'>
+        <img src="qisa.jpeg">
+        <h4>Qisya</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Queen Annisa ElFara Hafidzah","-","25 Mei 2010","@kuwinnnww","quen.jpeg","Ds. Patianrowo, Kec. Patianrowo",""]'>
+        <img src="quen.jpeg">
+        <h4>Queen</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Ridho Maulana Suprapto ","-","16 Januari 2010","@dho_rdz","rdi.jpeg","Ds. Rowomarto, Patianrowo",""]'>
+        <img src="rdi.jpeg">
+        <h4>Ridho</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Rojatul Alin","-","02 Juni 2010","@pearl1n_","alin.jpeg","Dsn. Kedung Bajul, Ds. Kalianyar",""]'>
+        <img src="alin.jpeg">
+        <h4>Alin</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Silna Faradisa","-","16 Maret 2011","@silnaaa_.a","sil.jpeg","Ds. Kalianyar, Kec. Kertosono",""]'>
+        <img src="sil.jpeg">
+        <h4>Silna</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["syaqila izzatul nur aini","-","12 November 2010","@sy_zzaa","sy.jpeg","Ds. Mabung, Baron",""]'>
+        <img src="sy.jpeg">
+        <h4>Syaqila</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Tsanian Najwa Amalia","-","31 Mei 2011","@tsnajmal__","prfile.jpg","Ds. Kudu, Kec. Kertosono",""]'>
+        <img src="prfile.jpg">
+        <h4>Tsanian</h4>
+      </div>
+
+      <div class="card scroll" data-modal='["Vita Lailatul Maulida","-","31 Desember 2010","@vtalamau","vita.jpeg","Ds.Gondang Wetan, Kec. Jatikalen",""]'>
+        <img src="vita.jpeg">
+        <h4>Vita</h4>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <button id="loadMoreStudent" class="load-more-btn">
+        Load More
+      </button>
+    </div>
+  </section>
+
+  <!-- ALBUM SECTION -->
+  <section id="album" class="reveal">
+    <div class="section-title">
+      <h2>Album Kenangan</h2>
+      <p>Momen indah selama kebersamaan</p>
+    </div>
+
+    <div class="album-grid" id="albumGrid">
+      <div class="card add-placeholder scroll" onclick="showUploadModal()">
+        <div class="add-placeholder-content">
+          <div class="add-icon">➕</div>
+          <h4>Tambah Album Baru</h4>
+          <p>Upload foto/video dari server</p>
+        </div>
+
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto-kelas-9a.jpg')">
+        <img src="foto-kelas-9a.jpg">
+        <h4>Hari Guru Nasional 2025</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('bazar.jpg')">
+        <img src="bazar.jpg">
+        <h4>Kokulikuler 2025</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto1.jpg')">
+        <img src="foto1.jpg">
+        <h4>Momen 1</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto2.jpg')">
+        <img src="foto2.jpg">
+        <h4>Momen 2</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto3.jpg')">
+        <img src="foto3.jpg">
+        <h4>Momen 3</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto4.jpg')">
+        <img src="foto4.jpg">
+        <h4>Momen 4</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto5.jpg')">
+        <img src="foto5.jpg">
+        <h4>Momen 5</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto6.jpg')">
+        <img src="foto6.jpg">
+        <h4>Momen 6</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto7.jpg')">
+        <img src="foto7.jpg">
+        <h4>Momen 7</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('video1.mp4')">
+        <img src="foto1.jpg" alt="Video Thumbnail">
+        <h4>Video Kenangan</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto8.jpg')">
+        <img src="foto8.jpg">
+        <h4>Momen 8</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto9.jpg')">
+        <img src="foto9.jpg">
+        <h4>Momen 9</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto10.jpg')">
+        <img src="foto10.jpg">
+        <h4>Momen 10</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto11.jpg')">
+        <img src="foto11.jpg">
+        <h4>Momen 11</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto12.jpg')">
+        <img src="foto12.jpg">
+        <h4>Momen 12</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto13.jpg')">
+        <img src="foto13.jpg">
+        <h4>Momen 13</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto14.jpg')">
+        <img src="foto14.jpg">
+        <h4>Momen 14</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto15.jpg')">
+        <img src="foto15.jpg">
+        <h4>Momen 15</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto16.jpg')">
+        <img src="foto16.jpg">
+        <h4>Momen 16</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto17.jpg')">
+        <img src="foto17.jpg">
+        <h4>Momen 17</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto18.jpg')">
+        <img src="foto18.jpg">
+        <h4>Momen 18</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto19.jpg')">
+        <img src="foto19.jpg">
+        <h4>Momen 19</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto20.jpg')">
+        <img src="foto20.jpg">
+        <h4>Momen 20</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto21.jpg')">
+        <img src="foto21.jpg">
+        <h4>Momen 21</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto22.jpg')">
+        <img src="foto22.jpg">
+        <h4>Momen 22</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto23.jpg')">
+        <img src="foto23.jpg">
+        <h4>Momen 23</h4>
+      </div>
+      <div class="card scroll" onclick="openAlbum('foto24.jpg')">
+        <img src="foto24.jpg">
+        <h4>Momen 24</h4>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <button id="loadMoreAlbum" class="load-more-btn">
+        Load More
+      </button>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="section-title">
+      <h2>Tentang Kelas 9A</h2>
+      <p>Kelas dengan cerita, tawa, dan kenangan yang tak terlupakan</p>
+    </div>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.8; color: var(--text-light);">
+      <p>Kelas 9A adalah kelas yang penuh dengan semangat, kreativitas, dan persahabatan yang kuat. Kami adalah angkatan 2023 yang telah melalui berbagai tantangan dan pencapaian bersama.</p>
+      <p>Dari momen belajar di kelas hingga kegiatan ekstrakurikuler, setiap kenangan yang kami buat akan selalu terpatri dalam hati. Terima kasih kepada semua teman, guru, dan orang-orang yang telah mendukung perjalanan kami.</p>
+      <p>"Bersama kita belajar, bersama kita tumbuh, bersama kita kenang selamanya."</p>
+    </div>
+  </section>
+
+  <!-- MODAL PROFIL -->
+  <div class="modal" id="modal">
+    <div class="modal-content profile-layout">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+
+      <div class="profile-left">
+        <img id="m-img" alt="Foto Siswa">
+      </div>
+      <div class="profile-right">
+        <h3 id="m-name"></h3>
+        <p>📞 <span id="m-phone"></span></p>
+        <p>🎂 <span id="m-birth"></span></p>
+        <p>📸 <span id="m-ig"></span></p>
+        <p>🏠 <span id="m-address"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL ALBUM -->
+  <div class="album-modal" id="albumModal">
+    <span class="album-close" onclick="closeAlbum(event)">&times;</span>
+
+    <img id="albumImg">
+    <video id="albumVideo" controls style="display:none; max-width: 90%; max-height: 90%; border-radius: 20px;"></video>
+  </div>
+
+  <!-- UPLOAD MODAL -->
+  <div class="modal" id="uploadModal">
+    <div class="modal-content" style="max-width: 500px; padding: 40px;">
+      <span class="upload-modal-close" onclick="closeUploadModal(event)">&times;</span>
+      <h3 style="color: var(--primary); margin-bottom: 20px; text-align: center;">Tambah Foto/Video Album</h3>
+      <form id="uploadForm">
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Judul Album:</label>
+          <input type="text" id="albumTitle" name="title" placeholder="Contoh: Pesta Kelas" required style="width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 12px; font-size: 1rem;">
+        </div>
+        <div style="margin-bottom: 25px;">
+          <label style="display: block; margin-bottom: 8px; font-weight: 600;">Pilih File (JPG, PNG, MP4 max 50MB):</label>
+          <input type="file" id="albumFile" name="file" accept="image/*,video/*" required style="width: 100%; padding: 12px; border: 2px dashed #deb887; border-radius: 12px; background: #fafafa;">
+        </div>
+        <div style="text-align: center;">
+          <button type="submit" style="padding: 14px 40px; font-size: 1.1rem; border: none; border-radius: 25px; background: var(--primary); color: white; cursor: pointer; font-weight: 600; transition: transform 0.2s;">
+            🚀 Upload ke Server
+          </button>
+        </div>
+      </form>
+      <p id="uploadStatus"></p>
+    </div>
+  </div>
+
+<noscript>
+    <style>
+      body::after { content: "Website memerlukan JavaScript untuk berfungsi penuh. Aktifkan JS dan refresh."; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.9); color: white; padding: 2rem; border-radius: 1rem; z-index: 9999; font-family: Arial; text-align: center; }
+      .hero-content { opacity: 1 !important; }
+    </style>
+  </noscript>
+  <script src="script.js"></script>
+  <script src="hero-size-control.js"></script>
+
+</body>
+</html>
+
+
